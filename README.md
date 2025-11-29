@@ -1,7 +1,6 @@
-def parse_config(config_string, required_settings):
+  def parse_config(config_string, required_settings):
     if config_string[-1] != '>':
         return "Error: Incomplete configuration."
-
     config_string = config_string[:-1]
     smths = config_string.split('--')
     sum = {}
